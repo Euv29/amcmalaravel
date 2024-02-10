@@ -1,0 +1,74 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.logo-header{
+    width: 2.5rem;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem;
+}
+
+.btn-enter {
+    padding: 0.5rem 1rem;
+    background-color: #3182ce;
+}
+
+/* Media query para desktops */
+@media (min-width: 768px) {
+    .logo {
+        margin: -2rem;
+    }
+    
+    .navegator{
+        margin-right: -2rem;
+    }
+
+    .nav-link,
+    .btn-enter {
+        padding: 0 0.1rem;
+        color: #fff;
+        font-weight: bold;
+    }
+}
+
+/* Estilos para o menu móvel */
+#mobile-menu {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#mobile-menu .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+#mobile-menu .menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#mobile-menu .menu-items a {
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+}
+
+#mobile-menu .menu-items a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
